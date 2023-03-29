@@ -12,6 +12,16 @@ output:
 All of the brands within this data set is owned by General Motors. I want to see how much each brand hold their value as they tack on mileage. Cadillac is supposed to be the luxury version of Chevrolet, almost every car company has a luxury version of their basic cars for example Ford has Lincoln.  We will be focusing on the effects of mileage on Cadillac and Chevy four door sedans to see if Cadillac holds its value better. 
 
 ``` r
+install.package("knitr")
+install.package("mosaic")
+install.package("car")
+install.package("DT")
+install.package("pander")
+library(knitr)
+opts_chunk$set(dev="png")
+```
+
+``` r
 # Be sure to download the CarPrices.csv file and save it
 # into your Data folder prior to knitting this file.
 library(mosaic)
@@ -25,17 +35,17 @@ CarPrices <- read.csv("../../Data/CarPrices.csv", header=TRUE)
 ```
 
 
-```{r}
+``` r
 ccCars <- CarPrices %>%
   filter(Trim == "Sedan 4D") %>%
   filter(Make == "Cadillac" | Make == "Chevrolet")
 
-datatable(ccCars)
+head(ccCars)
 ```
 
 #### Original Data
-```{r}
-datatable(CarPrices)
+``` r
+head(CarPrices)
 ```
 
 ## The Model
@@ -81,7 +91,7 @@ $$
 
 
 ## The Results
-```{r}
+``` r
 ## Print regression summary output  
 cars_lm <- lm(Price ~ Mileage + as.factor(Make), data=ccCars)
 pander(cars_lm, caption="Regression Summary output for Price on Mileage according to Model Type")
@@ -93,7 +103,7 @@ More specifically, both brands of sedans depreciate about \$0.18 (18 cents) per 
 
 To demonstrate how much this could impact the owner of the vehicle monetarily, assume that both vehicles were purchased at their average new prices of \$41139 (Cadillac) and \$18193 (Chevrolet). Then, assume each vehicle was driven for 50,000 miles then sold for their average 50,000 miles prices of \$32,034 (Cadillac) and \$9,088 (Chevrolet). This would result in a loss of \$9105 for the Cadillac as compared to \$9105 for the Corolla. Besides looking at the loss of value this way you can also look at it as a percenage of change in value assuming the same situation they value would drop by 22.13% (Cadillac) and 50.04% (Chevrolet) showing that even though they deprecate at about the same rate percentage wise the Cadillac Sedans hold their value better.
 
-```{r message=FALSE, warning=FALSE}
+``` r
 
 ## Code for the plot:
 
@@ -121,7 +131,7 @@ Note that in the table above, "Mileage" is the coefficient estimate for $\beta_1
 
 The constance variance of the data is questionable due to what seems to look like a megaphone in the residuals vs fitted plot. Also, the vertical variability of the dots in the residuals vs. fitted plot seems to be roughly constant across all fitted values, so constant variance can be assumed.The QQ plot appears to show normality. The Residuals vs. Ordered appears to show no pattern.
 
-```{r, fig.height=3}
+``` r 
 # This chunk uses ```{r, fig.height=3} to shrink the heigh of the graphs.
 par(mfrow=c(1,3))
 plot(cars_lm, which=1)
