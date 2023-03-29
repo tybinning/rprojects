@@ -1,9 +1,6 @@
 ---
 title: "Car Prices"
-output: 
-  html_document:
-    theme: cerulean
-    code_folding: hide
+output: rmarkdown::github_document
 ---
 
 <br>
