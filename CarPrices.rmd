@@ -11,7 +11,7 @@ output:
 ## Background
 All of the brands within this data set is owned by General Motors. I want to see how much each brand hold their value as they tack on mileage. Cadillac is supposed to be the luxury version of Chevrolet, almost every car company has a luxury version of their basic cars for example Ford has Lincoln.  We will be focusing on the effects of mileage on Cadillac and Chevy four door sedans to see if Cadillac holds its value better. 
 
-```{r, include=FALSE}
+``` r
 # Be sure to download the CarPrices.csv file and save it
 # into your Data folder prior to knitting this file.
 library(mosaic)
@@ -24,13 +24,6 @@ CarPrices <- read.csv("../../Data/CarPrices.csv", header=TRUE)
 # to use the "Import Dataset" option in the "Environment" window.
 ```
 
-## {.tabset .tabset-pills .tabset-fade}
-
-### Hide Data
-
-### Show Data {.tabset}
-
-#### Filtered Data
 
 ```{r}
 ccCars <- CarPrices %>%
