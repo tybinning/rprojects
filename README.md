@@ -1,5 +1,5 @@
 # R Projects
-Below there are a multiple examples of statitical tests and analyses.
+Below there are a multiple applications of using statistcal tests and anlyses on a variety of Data.
 
 | Project Name | Statistical Tests |
 | --- | --- |
