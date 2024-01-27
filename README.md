@@ -11,4 +11,4 @@ Below there are a multiple applications of using statistcal tests and anlyses on
 | <a href="https://tybinning.github.io/rprojects/HighSchoolSeniors2.html"> HighSchoolSeniors2 </a> | Two- Way ANOVA | mosaic, DT, pander, car, tidyverse | 
 | <a href="https://tybinning.github.io/rprojects/HighSchoolSeniors.html"> HighSchoolSeniors </a> | Independance Sample t- Test | tidyverse, DT, pander, readr, car, plotly |
 | <a href="https://tybinning.github.io/rprojects/RecallingWords.html"> Recalling words </a> | Wilcoxon Ranked Sum Test | mosaic, car, pander, tidyverse, DT |
-| <a href="https://tybinning/rprojects/blob/main/Cat_Eye_linear_regression.html"> Cateye Chevy Truck Valuation </a> | Linear Regression | mosaic, car, pander, tidyverse, DT |
+| <a href="https://tybinning.github.io/rprojects/blob/main/Cat_Eye_linear_regression.html"> Cateye Chevy Truck Valuation </a> | Linear Regression | mosaic, car, pander, tidyverse, DT |
