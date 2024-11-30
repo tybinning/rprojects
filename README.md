@@ -13,4 +13,4 @@ Below there are a multiple applications of using statistcal tests and anlyses on
 | <a href="https://tybinning.github.io/rprojects/RecallingWords.html"> Recalling words </a> | Wilcoxon Ranked Sum Test | mosaic, car, pander, tidyverse, DT |
 | <a href="https://tybinning.github.io/rprojects/Cateye_Selling_Price.html"> Cateye Chevy Truck Valuation </a> | Linear Regression | mosaic, car, pander, tidyverse, DT |
 | <a href="https://github.com/tybinning/rprojects/blob/main/Math425finalProject.html" > Predicting Defaulted Loans </a> | Logistic Regression to Predict Loan Defaults | mosaic, car, pander, tidyverse, DT  |
-| <a href="https://github.com/tybinning/rprojects/blob/main/PushUpRestTime.html" > Rest Times Affect on Push ups till Failure </a> | Blocked ANOVA | car, pander, tidyverse, ggplot |
+| <a href="https://github.com/tybinning/rprojects/blob/main/PushUpRestTime.html" > Push ups Rest Time Analysis of Variance </a> | Blocked ANOVA | car, pander, tidyverse, ggplot |
